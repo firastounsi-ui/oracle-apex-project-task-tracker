@@ -12,3 +12,14 @@ A low-code task and project management application built with Oracle APEX.
 ## Tech Stack
 - Oracle APEX
 - Oracle SQL
+
+## Screenshots
+
+### Tasks
+![Tasks](screenshots/tasks.png)
+
+### Form
+![Form](screenshots/form.png)
+
+### Charts
+![Charts](screenshots/charts.png)
