@@ -1,0 +1,257 @@
+---
+# ====== Application: Task Tracker ===========================
+identification: 
+  name: Task Tracker
+  alias: TASK-TRACKER
+  version: Release 1.0
+
+row-search: 
+  tokenize: true
+  text-query-function: None
+
+availability: 
+  status: Available with Developer Toolbar
+  build-status: Run and Build Application
+
+error-handling: 
+  default-display-location: Inline with Field and in Notification
+
+report-printing: 
+  type: Use Instance Settings
+
+advanced: 
+  friendly-urls: true
+  allow-feedback: true
+  logging: true
+  debugging: false
+  compatibility-mode: 24.2
+  accessible-read-only-items: true
+  pass-ecid: Y
+
+authentication: 
+  public-user: APEX_PUBLIC_USER
+  authentication-scheme: Oracle APEX Accounts # 154741022484296277234
+
+authorization: 
+  source-for-role-or-group-schemes: Access Control User Role Assignments
+
+session-management: 
+  rejoin-sessions: Disabled
+
+session-state-protection: 
+  enabled: true
+
+security: 
+  deep-linking: Disabled
+  browser-cache: Disabled
+  embed-in-frames: Deny
+  referrer-policy: strict-origin
+  html-escaping-mode: Extended
+
+database-session: 
+  parsing-schema: WKSP_GETPRO
+
+globalization: 
+  primary-language: English (en)
+  document-direction: Language Default
+  language-derived-from: Application Primary Language
+  automatic-time-zone: false
+  automatic-csv-encoding: true
+
+application-format-masks: 
+  date: DS
+  timestamp: DS
+  timestamp-time-zone: DS
+
+character-value-comparison: 
+  behavior: Database session NLS setting (default)
+
+logo: 
+  type: Text
+  text: Task Tracker
+
+progressive-web-app: 
+  enable: true
+  installable: false
+  display: Standalone
+  screen-orientation: Any
+  ios-status-bar-style: Default
+  enable-push-notifications: false
+
+navigation: 
+  home-url: 
+    url: 'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+    page: 1 # Home
+
+  login-url: 
+    url: 'f?p=&APP_ID.:LOGIN:&APP_SESSION.::&DEBUG.:::'
+    page: LOGIN
+
+navigation-menu: 
+  list-template: Side Navigation Menu
+  template-options: 
+  - '#DEFAULT#'
+  - t-TreeNav--styleA
+  - js-navCollapsed--hidden
+  list-position: Side
+  list: Navigation Menu # 154741023275542277235
+
+navigation-bar: 
+  implementation: List
+  list: Navigation Bar # 154741024433987277238
+  list-template: Navigation Bar
+  template-options: 
+  - '#DEFAULT#'
+
+javascript: 
+  include-jquery-migrate: false
+
+attributes: 
+  theme: Universal Theme # 42
+  global-page: 0
+  enable-end-users-to-choose-theme-style: false
+  add-"built-with-apex"-to-footer: false
+  auto-dismiss-success-messages: false
+
+subscription: 
+  version-number: 15753236173297
+
+substitutions: 
+- # ====== Substitution: APP_NAME ==============================
+  id: 1
+  identification: 
+    name: APP_NAME
+
+  value: 
+    static-value: Task Tracker
+
+component-settings: 
+- # ====== Component Setting: NATIVE_OPEN_AI_ASSISTANT =========
+  id: 154741017920773277230
+  identification: 
+    name: NATIVE_OPEN_AI_ASSISTANT
+    type: Dynamic Action
+
+  subscription: 
+    version-number: 15752372047888
+
+- # ====== Component Setting: NATIVE_COLOR_PICKER ==============
+  id: 154741018281252277231
+  identification: 
+    name: NATIVE_COLOR_PICKER
+    type: Item
+
+  subscription: 
+    version-number: 15752372047920
+
+- # ====== Component Setting: NATIVE_DATE_PICKER_APEX ==========
+  id: 154741018528129277231
+  identification: 
+    name: NATIVE_DATE_PICKER_APEX
+    type: Item
+
+  subscription: 
+    version-number: 15752372047938
+
+- # ====== Component Setting: NATIVE_GEOCODED_ADDRESS ==========
+  id: 154741018875198277232
+  identification: 
+    name: NATIVE_GEOCODED_ADDRESS
+    type: Item
+
+  subscription: 
+    version-number: 15752372047946
+
+- # ====== Component Setting: NATIVE_SELECT_MANY ===============
+  id: 154741019187513277232
+  identification: 
+    name: NATIVE_SELECT_MANY
+    type: Item
+
+  subscription: 
+    version-number: 15752372047954
+
+- # ====== Component Setting: NATIVE_SINGLE_CHECKBOX ===========
+  id: 154741019425135277232
+  identification: 
+    name: NATIVE_SINGLE_CHECKBOX
+    type: Item
+
+  subscription: 
+    version-number: 15752372047963
+
+- # ====== Component Setting: NATIVE_STAR_RATING ===============
+  id: 154741019779716277232
+  identification: 
+    name: NATIVE_STAR_RATING
+    type: Item
+
+  subscription: 
+    version-number: 15752372047975
+
+- # ====== Component Setting: NATIVE_YES_NO ====================
+  id: 154741020088413277232
+  identification: 
+    name: NATIVE_YES_NO
+    type: Item
+
+  subscription: 
+    version-number: 15752372047986
+
+- # ====== Component Setting: NATIVE_GEOCODING =================
+  id: 154741020359435277233
+  identification: 
+    name: NATIVE_GEOCODING
+    type: Process
+
+  settings: 
+    attribute-1: RELAX_HOUSE_NUMBER
+
+  subscription: 
+    version-number: 15752372047997
+
+- # ====== Component Setting: NATIVE_DISPLAY_SELECTOR ==========
+  id: 154741020691169277233
+  identification: 
+    name: NATIVE_DISPLAY_SELECTOR
+    type: Region
+
+  subscription: 
+    version-number: 15752372048009
+
+- # ====== Component Setting: NATIVE_IR ========================
+  id: 154741020982727277233
+  identification: 
+    name: NATIVE_IR
+    type: Region
+
+  subscription: 
+    version-number: 15752372048019
+
+- # ====== Component Setting: NATIVE_MAP_REGION ================
+  id: 154741021258078277233
+  identification: 
+    name: NATIVE_MAP_REGION
+    type: Region
+
+  subscription: 
+    version-number: 15752372048026
+
+- # ====== Component Setting: NATIVE_ADFBC =====================
+  id: 154741021536899277233
+  identification: 
+    name: NATIVE_ADFBC
+    type: REST Data Source
+
+  subscription: 
+    version-number: 15752372048037
+
+- # ====== Component Setting: NATIVE_BOSS ======================
+  id: 154741021812078277234
+  identification: 
+    name: NATIVE_BOSS
+    type: REST Data Source
+
+  subscription: 
+    version-number: 15752372048053
+
